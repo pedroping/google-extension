@@ -1,6 +1,8 @@
 let lastMessageParent;
 
 function blurMessagesElements(elements) {
+  if (!elements) return;
+
   Array.from(elements).forEach((post, i) => {
     if (
       post.classList.contains("blur-message") ||
@@ -35,17 +37,17 @@ function initMessageDropdownBlur(data) {
 
   document.body.style.setProperty(
     "--message-blur-amount",
-    (data.blurMessage.blurAmount || 10) + "px"
+    (data.blurMessage.blurAmount || 10) + "px",
   );
   document.body.style.setProperty("--message-blur-gray-scale", "1");
 
   setInterval(() => {
     const parent =
       document.querySelector(
-        "#layers > div > div:nth-child(2) > div > div > div > div > div > div > div.css-175oi2r.r-kemksi.r-16y2uox.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div"
+        "#layers > div > div:nth-child(2) > div > div > div > div > div > div > div.css-175oi2r.r-kemksi.r-16y2uox.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div",
       ) ||
       document.querySelector(
-        "#layers > div > div:nth-child(2) > div > div > div > div > div.r-6koalj.r-eqz5dr.r-16y2uox > div > div > div > div.css-175oi2r.r-150rngu.r-kemksi.r-11yh6sk.r-st84sj.r-j3xhw6.r-ouzzow.r-16y2uox.r-1pi2tsx > div.css-175oi2r.r-16y2uox.r-10m9thr.r-1h0z5md.r-f8sm7e.r-13qz1uu.r-3pj75a.r-1ye8kvj > div"
+        "#layers > div > div:nth-child(2) > div > div > div > div > div.r-6koalj.r-eqz5dr.r-16y2uox > div > div > div > div.css-175oi2r.r-150rngu.r-kemksi.r-11yh6sk.r-st84sj.r-j3xhw6.r-ouzzow.r-16y2uox.r-1pi2tsx > div.css-175oi2r.r-16y2uox.r-10m9thr.r-1h0z5md.r-f8sm7e.r-13qz1uu.r-3pj75a.r-1ye8kvj > div",
       );
 
     if (!parent) return;

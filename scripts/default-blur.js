@@ -21,7 +21,7 @@ class DefaultBlur {
     _cssClass,
     _getParentFn,
     _hasTrending = "",
-    _hasMessages = false
+    _hasMessages = false,
   ) {
     this.data = _data;
     this.dataKey = _dataKey;
@@ -45,14 +45,14 @@ class DefaultBlur {
       document.body.style.setProperty(`--${this.cssClass}-blur-amount`, "0px");
       document.body.style.setProperty(
         `--${this.cssClass}-blur-gray-scale`,
-        "0"
+        "0",
       );
       return;
     }
 
     document.body.style.setProperty(
       `--${this.cssClass}-blur-amount`,
-      (this.data?.[this.dataKey]?.blurAmount || 10) + "px"
+      (this.data?.[this.dataKey]?.blurAmount || 10) + "px",
     );
     document.body.style.setProperty(`--${this.cssClass}-blur-gray-scale`, "1");
 
@@ -124,11 +124,14 @@ class DefaultBlur {
 
         setTimeout(() => {
           this.allPostsList.forEach((post) => {
-            if (this.data?.blurOnScroll?.value || post != this.lastElementHovered)
+            if (
+              this.data?.blurOnScroll?.value ||
+              post != this.lastElementHovered
+            )
               post?.classList?.add(`blur-${this.cssClass}`);
           });
         }, 1);
-      }, 200)
+      }, 200),
     );
   }
 
@@ -169,6 +172,8 @@ class DefaultBlur {
       if (this.data?.blurOnScroll?.value || post != this.lastElementHovered)
         post.classList.add(`blur-${this.cssClass}`);
     });
+
+    if (!elements) return;
 
     Array.from(elements).forEach((post) => {
       if (post.getAttribute("element-init") || this.allPostsList.includes(post))

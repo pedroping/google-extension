@@ -1,6 +1,8 @@
 let lastPhotoParent;
 
 function blurPhotoElement(elements) {
+  if (!elements) return;
+
   Array.from(elements)
     .map((element) => element?.firstChild?.firstChild ?? element)
     .forEach((post) => {
@@ -30,12 +32,12 @@ function blurPhotoElement(elements) {
 function imagesBlur() {
   setInterval(() => {
     let parent = document.querySelector(
-      "#layers > div:nth-child(2) > div > div > div > div > div > div.css-175oi2r.r-1ny4l3l.r-18u37iz.r-1pi2tsx.r-1777fci.r-1xcajam.r-ipm5af.r-g6jmlv.r-1awozwy > div.css-175oi2r.r-1wbh5a2.r-htvplk.r-1udh08x.r-17gur6a.r-1pi2tsx.r-13qz1uu > div > div.css-175oi2r.r-16y2uox.r-1wbh5a2 > div.css-175oi2r.r-1pi2tsx.r-11yh6sk.r-buy8e9.r-13qz1uu > div.css-175oi2r.r-13awgt0.r-184en5c > div.css-175oi2r.r-13awgt0.r-1ny4l3l > div.css-175oi2r.r-16y2uox.r-10m9thr > ul"
+      "#layers > div:nth-child(2) > div > div > div > div > div > div.css-175oi2r.r-1ny4l3l.r-18u37iz.r-1pi2tsx.r-1777fci.r-1xcajam.r-ipm5af.r-g6jmlv.r-1awozwy > div.css-175oi2r.r-1wbh5a2.r-htvplk.r-1udh08x.r-17gur6a.r-1pi2tsx.r-13qz1uu > div > div.css-175oi2r.r-16y2uox.r-1wbh5a2 > div.css-175oi2r.r-1pi2tsx.r-11yh6sk.r-buy8e9.r-13qz1uu > div.css-175oi2r.r-13awgt0.r-184en5c > div.css-175oi2r.r-13awgt0.r-1ny4l3l > div.css-175oi2r.r-16y2uox.r-10m9thr > ul",
     );
 
     if (!parent) {
       const otherParent = document.querySelector(
-        "#layers > div:nth-child(2) > div > div > div > div > div > div.css-175oi2r.r-1ny4l3l.r-18u37iz.r-1pi2tsx.r-1777fci.r-1xcajam.r-ipm5af.r-g6jmlv.r-1awozwy > div.css-175oi2r.r-1wbh5a2.r-htvplk.r-1udh08x.r-17gur6a.r-1pi2tsx.r-13qz1uu > div > div.css-175oi2r.r-16y2uox.r-1wbh5a2 > div.css-175oi2r.r-1pi2tsx.r-11yh6sk.r-buy8e9.r-13qz1uu > div.css-175oi2r.r-13awgt0.r-184en5c > div > div > div > div"
+        "#layers > div:nth-child(2) > div > div > div > div > div > div.css-175oi2r.r-1ny4l3l.r-18u37iz.r-1pi2tsx.r-1777fci.r-1xcajam.r-ipm5af.r-g6jmlv.r-1awozwy > div.css-175oi2r.r-1wbh5a2.r-htvplk.r-1udh08x.r-17gur6a.r-1pi2tsx.r-13qz1uu > div > div.css-175oi2r.r-16y2uox.r-1wbh5a2 > div.css-175oi2r.r-1pi2tsx.r-11yh6sk.r-buy8e9.r-13qz1uu > div.css-175oi2r.r-13awgt0.r-184en5c > div > div > div > div",
       );
 
       if (!otherParent) return;
@@ -69,10 +71,10 @@ function photoBlur(data) {
 
   document.body.style.setProperty(
     "--post-blur-amount",
-    (data.blurPost.blurAmount || 10) + "px"
+    (data.blurPost.blurAmount || 10) + "px",
   );
   document.body.style.setProperty("--post-blur-gray-scale", "1");
-  
+
   imagesBlur();
   photoCommentsBlur.initBlur(data);
 }

@@ -19,57 +19,57 @@ if (typeof browser == "undefined") {
 
 const getHomeParentFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-8e33y0.r-1lnugsr.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div",
   );
 
 const getCommentsParentFn = () =>
   document.querySelector(
-    "#layers > div:nth-child(2) > div > div > div > div > div > div.css-175oi2r.r-1ny4l3l.r-18u37iz.r-1pi2tsx.r-1777fci.r-1xcajam.r-ipm5af.r-g6jmlv.r-1awozwy > div.css-175oi2r.r-1wbh5a2.r-htvplk.r-1udh08x.r-17gur6a.r-1pi2tsx.r-13qz1uu > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-th6na.r-1phboty.r-1dqxon3.r-1hycxz > section > div > div"
+    "#layers > div:nth-child(2) > div > div > div > div > div > div.css-175oi2r.r-1ny4l3l.r-18u37iz.r-1pi2tsx.r-1777fci.r-1xcajam.r-ipm5af.r-g6jmlv.r-1awozwy > div.css-175oi2r.r-1wbh5a2.r-htvplk.r-1udh08x.r-17gur6a.r-1pi2tsx.r-13qz1uu > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-th6na.r-1phboty.r-1dqxon3.r-1hycxz > section > div > div",
   );
 
 const getPostCommentsParentFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > section > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > section > div > div",
   );
 
 const getCommunitiesParentFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > section > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > section > div > div",
   );
 
 const getBookmarksParentFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div",
   );
 
 const getExploreParentFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div",
   );
 
 const getMessagesOptionsFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > section.css-175oi2r.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-1udh08x.r-13awgt0.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div > div.css-175oi2r.r-kemksi.r-16y2uox.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > section.css-175oi2r.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-1udh08x.r-13awgt0.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div > div.css-175oi2r.r-kemksi.r-16y2uox.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div",
   );
 
 const getMessagesFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > section:nth-child(2) > div > div > div.css-175oi2r.r-16y2uox.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div.r-6koalj.r-eqz5dr.r-16y2uox > div > div > div > div.css-175oi2r.r-150rngu.r-kemksi.r-11yh6sk.r-lqr4d2.r-11uj9h2.r-ouzzow.r-16y2uox.r-1pi2tsx > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > section:nth-child(2) > div > div > div.css-175oi2r.r-16y2uox.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div.r-6koalj.r-eqz5dr.r-16y2uox > div > div > div > div.css-175oi2r.r-150rngu.r-kemksi.r-11yh6sk.r-lqr4d2.r-11uj9h2.r-ouzzow.r-16y2uox.r-1pi2tsx > div > div",
   );
 
 const getNotificationsFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div",
   );
 
 const getProfileFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div:nth-child(3) > div > div > section > div > div",
   );
 
 const getSearchFn = () =>
   document.querySelector(
-    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div"
+    "#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-kemksi.r-1kqtdi0.r-1ua6aaf.r-th6na.r-1phboty.r-16y2uox.r-184en5c.r-1abdc3e.r-1lg4w6u.r-f8sm7e.r-13qz1uu.r-1ye8kvj > div > div.css-175oi2r.r-f8sm7e.r-13qz1uu.r-1ye8kvj > section > div > div",
   );
 
 function initBlurClasses() {
@@ -80,7 +80,7 @@ function initBlurClasses() {
       "post",
       getHomeParentFn,
       "posts",
-      true
+      true,
     );
 
   if (!photoCommentsBlur)
@@ -88,7 +88,7 @@ function initBlurClasses() {
       lastData,
       "blurPost",
       "post",
-      getCommentsParentFn
+      getCommentsParentFn,
     );
 
   if (!postCommentsBlur)
@@ -98,7 +98,7 @@ function initBlurClasses() {
       "post",
       getPostCommentsParentFn,
       "post",
-      true
+      true,
     );
 
   if (!communitiesBlur)
@@ -108,7 +108,7 @@ function initBlurClasses() {
       "communities",
       getCommunitiesParentFn,
       "communities",
-      true
+      true,
     );
 
   if (!bookmarksBlur)
@@ -118,7 +118,7 @@ function initBlurClasses() {
       "bookmarks",
       getBookmarksParentFn,
       "bookmarks",
-      true
+      true,
     );
 
   if (!exploreBlur)
@@ -128,7 +128,7 @@ function initBlurClasses() {
       "explore",
       getExploreParentFn,
       null,
-      true
+      true,
     );
 
   if (!messagesOptionsBlur)
@@ -138,7 +138,7 @@ function initBlurClasses() {
       "message-option",
       getMessagesOptionsFn,
       null,
-      false
+      false,
     );
 
   if (!messagesBlur)
@@ -148,7 +148,7 @@ function initBlurClasses() {
       "messages",
       getMessagesFn,
       null,
-      false
+      false,
     );
 
   if (!notificationsBlur)
@@ -158,7 +158,7 @@ function initBlurClasses() {
       "notifications",
       getNotificationsFn,
       "notifications",
-      true
+      true,
     );
 
   if (!profileBlur)
@@ -168,7 +168,7 @@ function initBlurClasses() {
       "profile",
       getProfileFn,
       "profile",
-      true
+      true,
     );
 
   if (!searchBlur)
@@ -178,7 +178,7 @@ function initBlurClasses() {
       "search",
       getSearchFn,
       "search",
-      true
+      true,
     );
 }
 
@@ -255,7 +255,7 @@ function blurContent() {
 
   if (
     window.location.href.match(
-      /^https?:\/\/(?:x|twitter)\.com\/[^\/]+\/communities\//
+      /^https?:\/\/(?:x|twitter)\.com\/[^\/]+\/communities\//,
     )?.[0]
   )
     return communitiesBlur.initBlur(lastData);
